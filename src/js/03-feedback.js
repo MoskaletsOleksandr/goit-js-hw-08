@@ -20,8 +20,6 @@ const handleFormElInput = event => {
   formData[emailEl.name] = emailEl.value;
   formData[messageEl.name] = messageEl.value;
 
-  formData[event.target.name] = event.target.value;
-
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 };
 const populateFormWithLocalStorage = data => {
